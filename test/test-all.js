@@ -22,6 +22,24 @@ function testTable() {
 
     let t4 = KMP.makePartialMatchTable(KMP.stringToChars('abcdabd'));
     assert.deepEqual(t4, [0, 0, 0, 0, 1, 2, 0]);
+
+    let t5 = KMP.makePartialMatchTable(KMP.stringToChars('hello world'));
+    assert.deepEqual(t5, [
+        0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0,
+        0
+    ]);
+
+    let t6 = KMP.makePartialMatchTable(KMP.stringToChars('天苍苍野茫茫'));
+    assert.deepEqual(t6, [
+        0, 0, 0, 0, 0, 0
+    ]);
+
+    let t7 = KMP.makePartialMatchTable(KMP.stringToChars('上海自来水来自海上'));
+    assert.deepEqual(t7, [
+        0, 0, 0, 0, 0,
+        0, 0, 0, 1
+    ]);
 }
 
 function testFind() {

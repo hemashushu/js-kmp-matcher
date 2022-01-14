@@ -113,11 +113,11 @@ class KMP {
         return table;
     }
 
-    static find(testStr, keyword) {
+    static find(testStr, keywordStr) {
         let testChars = KMP.stringToChars(testStr);
         let testLength = testChars.length;
 
-        let keywordChars = KMP.stringToChars(keyword);
+        let keywordChars = KMP.stringToChars(keywordStr);
         let keywordLength = keywordChars.length;
 
         let table = KMP.makePartialMatchTable(keywordChars);
