@@ -1,6 +1,6 @@
 {
     "name": "js-kmp-matcher",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "index.js",
     "type": "module",
@@ -12,6 +12,7 @@
         "url": "git+ssh://git@github.com/hemashushu/js-kmp-matcher.git"
     },
     "author": "Hemashushu <hippospark@gmail.com>",
+    "keywords": ["kmp"],
     "license": "MPL-2.0",
     "bugs": {
         "url": "https://github.com/hemashushu/js-kmp-matcher/issues"
